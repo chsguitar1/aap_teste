@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button-tabs defaultHref="tabs-home/cardapio" tabsPrefix="" tabsPageSelector="app-tabs-home">
+            </ion-back-button-tabs>
+        </ion-buttons>
+        <ion-title>Lanche</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="padding">
+    <ionic-calendar-date-picker (onSelect)="dateSelected($event)" [monthLabels]="['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro']" [dayLabels]="['DOM','SEG','TER','QUA','QUI','SEX']"></ionic-calendar-date-picker>
+
+</ion-content>

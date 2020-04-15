@@ -1,0 +1,25 @@
+<ion-tabs>
+    <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="comunicados">
+            <ion-badge color="success" *ngIf="globals.ncom > 0">{{globals.ncom}}</ion-badge>
+            <ion-icon class="iconSize" name="megaphone"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button (click)="goAlunos()">
+            <ion-icon class="iconSize" name="contacts"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/tabs-home/eventos">
+            <ion-icon class="iconSize" name="images"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button routerLink="/tabs-home/cardapio">
+            <ion-icon class="iconSize" name="restaurant"></ion-icon>
+        </ion-tab-button>
+
+        <ion-tab-button (click)="goCalendario()">
+            <ion-icon class="iconSize" name="bookmarks"></ion-icon>
+        </ion-tab-button>
+
+    </ion-tab-bar>
+</ion-tabs>

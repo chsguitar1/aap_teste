@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+
+        </ion-buttons>
+        <ion-title>Alunos</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="content">
+    <ion-list>
+        <ion-item *ngFor="let item of alunos" (click)="goHome(item.cpf,item.turma,item.nome,item.foto,item.nometurma)">
+            <ion-card-content>
+                <div class="row">
+                    <div class="col">
+                        <img class="redonda" [src]="item.foto != 'sem' ? item.foto : foto">
+                    </div>
+                    <div class="col">
+                        <h1 class="fw500">{{item.nome}}</h1>
+                    </div>
+                </div>
+            </ion-card-content>
+
+        </ion-item>
+    </ion-list>
+
+    <!-- <ion-footer>
+    <small>versão 1.0.0.8rc</small>
+  </ion-footer> -->
+</ion-content>

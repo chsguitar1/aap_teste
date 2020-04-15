@@ -1,0 +1,14 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+
+            <ion-back-button-tabs defaultHref="tabs-home/comunicados" tabsPrefix="" tabsPageSelector="app-tabs-home">
+            </ion-back-button-tabs>
+        </ion-buttons>
+        <ion-title>{{comunicado.titulo}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    {{comunicado.texto}}
+</ion-content>

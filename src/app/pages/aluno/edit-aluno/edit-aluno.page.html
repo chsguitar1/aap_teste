@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{nomeAluno}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content class="profile">
+    <ion-card no-margin>
+        <ion-card-content>
+            <ion-row>
+                <ion-col col-2></ion-col>
+                <ion-col col-8>
+                    <img class="redonda" [src]="foto" />
+                    <button ion-button full color="secondary" (click)="getFoto('picture')">
+                <ion-icon ios="ios-camera" md="md-camera" style="font-size:34px;padding-right: 10px;"></ion-icon>
+                Foto
+              </button>
+                </ion-col>
+                <ion-col col-2></ion-col>
+            </ion-row>
+        </ion-card-content>
+    </ion-card>
+    <small>versão V1.0.0.2rc</small>
+</ion-content>

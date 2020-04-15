@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "853593541291",
+    "firebase_url": "https://hermes-2f84e.firebaseio.com",
+    "project_id": "hermes-2f84e",
+    "storage_bucket": "hermes-2f84e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853593541291:android:df3ae6c6260b81f2",
+        "android_client_info": {
+          "package_name": "net.eagenda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853593541291-m1to8bkes6nnm8sqeflcur558s7kdjpr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBoGAxZkh5ZoToVpEkmsdXOtUaoRHk-7c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853593541291-m1to8bkes6nnm8sqeflcur558s7kdjpr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

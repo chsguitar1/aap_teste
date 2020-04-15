@@ -1,0 +1,19 @@
+.modalcss .modal-wrapper {
+    height: 20%;
+    top: 80%;
+    position: absolute;
+    display: block;
+}
+
+.modalcss .md-grid-basic {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background: #cfe0f3;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    color: #454b50;
+}
+
+.md-grid-basic .ion-row {
+    margin: 1em 0;
+}

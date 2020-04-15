@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+        </ion-buttons>
+
+        <ion-title>{{getNameAluno()}} </ion-title>
+        <ion-avatar slot="start">
+            <img class="redondinha" [src]="getFoto()" (click)="editAluno()">
+        </ion-avatar>
+        <ion-avatar slot="end">
+            <ion-icon class="btexit" name="exit" (click)="presentAlertConfirm()"></ion-icon>
+        </ion-avatar>
+
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-virtual-scroll [items]="getEventosAluno()" class="animated fadeInUp">
+        <ion-card *virtualItem="let item; let itemBounds = bounds;" class="chat-item item-remove-animate item-avatar item-icon-right" (click)="viewEvento(item,item.key)" lines="none">
+            <ion-card-header>
+                <ion-item-divider>
+                    <ion-card-title>{{ item.titulo }}</ion-card-title>
+                </ion-item-divider>
+            </ion-card-header>
+            <ion-card-content>
+                <ion-label>Data: {{item.data | date: 'dd/MM/yyyy'}} Horário: {{item.hora}} </ion-label>
+            </ion-card-content>
+        </ion-card>
+    </ion-virtual-scroll>
+</ion-content>

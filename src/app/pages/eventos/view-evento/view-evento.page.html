@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button-tabs defaultHref="tabs-home/eventos" tabsPrefix="" tabsPageSelector="app-tabs-home">
+            </ion-back-button-tabs>
+        </ion-buttons>
+        <ion-title>{{evento.titulo}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-label>{{evento.texto}} </ion-label>
+    <ion-list class="animated fadeInDown">
+        <ion-item *ngFor="let item of medias" (click)="viewFoto(item.downloadURL,evento.texto) ">
+            <ion-card color="light">
+                <ion-card-content>
+                    <ion-img [src]="item.downloadURL"></ion-img>
+                </ion-card-content>
+            </ion-card>
+        </ion-item>
+    </ion-list>
+
+</ion-content>

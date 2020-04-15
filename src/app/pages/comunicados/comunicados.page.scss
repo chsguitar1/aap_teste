@@ -1,0 +1,14 @@
+:host {
+    ion-item {
+        border-bottom: 2px dotted var(--ion-color-medium);
+        margin-top: 3px;
+    }
+}
+
+.rend {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    border: solid 2px #fff;
+    display: inline-flex;
+}

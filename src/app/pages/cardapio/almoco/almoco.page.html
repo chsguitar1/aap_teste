@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button-tabs defaultHref="tabs-home/cardapio" tabsPrefix="" tabsPageSelector="app-tabs-home">
+            </ion-back-button-tabs>
+        </ion-buttons>
+        <ion-title>Almoço</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+    <ion-virtual-scroll [items]="items">
+        <ion-card *virtualItem="let item" lines="none">
+
+            <ion-card-header class="chat-item item-remove-animate item-avatar item-icon-right">
+                <ion-card-title>{{ item.dia }}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content *ngFor="let car of item.itensCardapio">
+                <ion-label>Cardápio: {{car.prato}} </ion-label>
+            </ion-card-content>
+        </ion-card>
+    </ion-virtual-scroll>
+</ion-content>
